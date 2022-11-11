@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  height: 100vh;
+}
+main header {
+  color: #646464;
+  background-color: #dedede;
+  border-radius: 0 0 16px 16px;
+  padding: 12px 5px 9px;
+}
+main header i {
+  font-size: 17px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  background-color: #dedede;
+  border-radius: 25px 25px 0 0;
+  font-size: 11px;
+}
+footer > div * {
+  pointer-events: none;
+}
+footer i {
+  font-size: 25px;
+}
+
+.active {
+  color: rgb(34, 34, 34);
+}
+
+.profile-img i {
+  font-size: 50px;
+  background: #dedede;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: auto;
+}
+
+.switch {
+  border: 1px solid;
+  max-width: 90%;
+}/*# sourceMappingURL=style.css.map */

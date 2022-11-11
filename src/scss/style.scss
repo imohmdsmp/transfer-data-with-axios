@@ -1,0 +1,128 @@
+$MainColor:#dedede;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+main{
+    >div{
+        display: none;
+    }
+    height: 100vh;
+    header{
+        color: #646464;
+        background-color: $MainColor;
+        border-radius: 0 0 16px 16px;
+        padding: 12px 5px 9px;
+        i{
+            font-size: 17px;
+        }
+    }
+}
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    background-color: $MainColor;
+    border-radius:25px 25px 0 0;
+    font-size: 11px;
+    >div{
+        *{
+            pointer-events: none;
+        }
+    }
+    i{
+        font-size: 25px;
+    }
+}
+
+
+.active{
+    color: rgb(34, 34, 34);
+}
+
+.profile-img{
+ i{
+    font-size: 50px;
+    background: $MainColor;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: auto;
+ }   
+}
+
+.switch{
+    border: 1px solid;
+    max-width: 90% !important;
+    border-radius: 30px;
+    margin: auto;
+    padding: 3px 4px !important;
+    .col{
+        padding: 3px 0;
+    }
+}
+
+.switch-on{
+    background-color: #505050f0;
+    border-radius: 30px;
+    color: white;
+}
+
+textarea,
+input{
+    border: 0;
+    border-radius: 30px;
+    padding: 10px 20px;
+    background: #dedede;
+    margin: 4px 0 !important;
+    font-size: 15px !important;
+    &:focus-visible{
+        outline: none;
+    }
+}
+
+.profile-sec-form{
+    >form{
+        overflow-y: scroll;
+        display: none;
+    }
+}
+
+.form-on{
+    display:flex !important;
+}
+
+.page-on{
+    display: block;
+}
+
+#orderSec{
+    >div>div{
+        display:flex;
+        align-items: center;
+        textarea,
+        input:not(input[type='submit']){
+            min-width: 100%;
+        }
+    }
+    textarea{
+        min-height: 80px;
+    }
+}
+
+input[type='submit']{
+    width: 130px !important;
+}
